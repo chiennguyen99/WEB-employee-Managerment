@@ -9,18 +9,24 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Tables</title>
+  <title>SB Admin 2 - Color Utilities</title>
 
-  <link href="./css/all.css" rel="stylesheet" type="text/css">
+  <link href="E:\Code web\bootstrapDownLoad\startbootstrap-sb-admin-2-gh-pages\startbootstrap-sb-admin-2-gh-pages\vendor\fontawesome-free\css\all.css" rel="stylesheet" type="text/css">
 
   <!-- Custom fonts for this template -->
-  <link href="./css.dev/css-fonts-download.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   <!-- Custom styles for this template -->
-  <link href="./css.dev/sb-admin-2.css" rel="stylesheet">
+  <link href="./sb-admin-2.css" rel="stylesheet">
+
   <!-- Custom styles for this page -->
-  <link href="./css.dev/dataTables.bootstrap4.css" rel="stylesheet">
-  <link href="./css.dev/graphic.css" rel="stylesheet">
-  <link href="./css.dev/develop.css" rel="stylesheet">
+  <link href="./dataTables.bootstrap4.css" rel="stylesheet">
+
+  <link href="./graphic.css" rel="stylesheet">
+
+  <link href="./develop.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -59,8 +65,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-          aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Components</span>
         </a>
@@ -74,16 +79,15 @@
       </li>
 
       <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-          aria-expanded="true" aria-controls="collapseUtilities">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
           <span>Utilities</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div id="collapseUtilities" class="collapse show" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
+            <a class="collapse-item active" href="utilities-color.html">Colors</a>
             <a class="collapse-item" href="utilities-border.html">Borders</a>
             <a class="collapse-item" href="utilities-animation.html">Animations</a>
             <a class="collapse-item" href="utilities-other.html">Other</a>
@@ -101,8 +105,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-          aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Pages</span>
         </a>
@@ -128,7 +131,7 @@
       </li>
 
       <!-- Nav Item - Tables -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
@@ -162,8 +165,7 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -177,17 +179,14 @@
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
               <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                      aria-label="Search" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-primary" type="button">
                         <i class="fas fa-search fa-sm"></i>
@@ -200,15 +199,13 @@
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
                 <!-- Counter - Alerts -->
                 <span class="badge badge-danger badge-counter">3+</span>
               </a>
               <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
                   Alerts Center
                 </h6>
@@ -251,15 +248,13 @@
 
             <!-- Nav Item - Messages -->
             <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>
                 <!-- Counter - Messages -->
                 <span class="badge badge-danger badge-counter">7</span>
               </a>
               <!-- Dropdown - Messages -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="messagesDropdown">
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                 <h6 class="dropdown-header">
                   Message Center
                 </h6>
@@ -269,8 +264,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
-                      having.</div>
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
@@ -280,8 +274,7 @@
                     <div class="status-indicator"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them
-                      sent to you?</div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
                     <div class="small text-gray-500">Jae Chun · 1d</div>
                   </div>
                 </a>
@@ -291,8 +284,7 @@
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so
-                      far, keep up the good work!</div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
                     <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                   </div>
                 </a>
@@ -302,8 +294,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people
-                      say this to all dogs, even if they aren't good...</div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
@@ -315,8 +306,7 @@
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
@@ -350,254 +340,174 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-
           <div class="btn-group" role="group" aria-label="Basic example">
-            <nav aria-label=...>
-              <ul class=pagination>
-                <li id="previous-page"><a href="javascript:void(0)" aria-label=Previous><span
-                      aria-hidden=true>&laquo;</span></a></li>
-                <li class='current-page active'>
-                  <button type="button" id="btn-0" class="btn btn-secondary">Table</button>
-                </li>
-                <li class='current-page'>
-                  <button type="button" id="btn-1" class="btn btn-secondary">Detail</button>
-                </li>
-                <li class='current-page'>
-                  <button type="button" id="btn-2" class="btn btn-secondary">Orther</button>
-                </li>
-              </ul>
-            </nav>
+            <button type="button" class="btn btn-secondary">Table</button>
+            <button type="button" class="btn btn-secondary">Detail</button>
+            <button type="button" class="btn btn-secondary">Orther</button>
           </div>
 
-          <!-- DataTales Example -->
-          <div id="page">
+          <!-- Content Row -->
 
-            <div class="list-group">
+          
+            <div class="row">
 
-              <div id="data-table">
+              <!-- First Column -->
+              <div class="col-lg-4">
+
+                <!-- Custom Text Color Utilities -->
                 <div class="card shadow mb-4">
                   <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Employee detail</h6>
                   </div>
                   <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                          <tr>
-                            <th>
-                              <span class="custom-checkbox" id="checkboxAll">
-                                <input type="checkbox" id="selectAll" name="ca">
-                                <label for="selectAll"></label>
-                              </span>
-                            </th>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Experience</th>
-                            <th>Phone</th>
-                            <th style="width: 121px;">Action</th>
-                          </tr>
-                        </thead>
-                        <tfoot id="last-table">
-                          <tr>
-                            <th>
-                            </th>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Experience</th>
-                            <th>Phone</th>
-                            <th>Action</th>
-                          </tr>
-                        </tfoot>
-                        <tbody id="contenst-table">
-                          <tr id="row1">
-                            <td>
-                              <span class="custom-checkbox" id="checkboxIndex">
-                                <input type="checkbox" id="check1" class="checkitem" name="c1">
-                                <label for="check1" id="abc"></label>
-                              </span>
-                            </td>
-                            <td>chien</td>
-                            <td>Thai Binh</td>
-                            <td>30</td>
-                            <td>2010/07/14</td>
-                            <td>
-                              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                  class="fas fa-user-edit"></i></a>
-                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                  class="fas fa-user-minus"></i></a>
-                              <a data-toggle="modal" class="btn-eye"><i class="fas fa-eye"></i></a>
-                            </td>
-                          </tr>
+                      <!-- Continue contents -->
 
-                          <tr id="row2">
-                            <td>
-                              <span class="custom-checkbox" id="checkboxIndex">
-                                <input type="checkbox" id="check2" class="checkitem" name="c2">
-                                <label for="check2"></label>
-                              </span>
-                            </td>
-                            <td>chien1</td>
-                            <td>Thai Binh</td>
-                            <td>30</td>
-                            <td>2010/07/14</td>
-                            <td>
-                              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                  class="fas fa-user-edit"></i></a>
-                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                  class="fas fa-user-minus"></i></a>
-                              <a data-toggle="modal" class="btn-eye"><i class="fas fa-eye"></i></a>
-                            </td>
-                          </tr>
+                      <div class="alert alert-success" role="alert">
+                        ID employee: 17020608
+                      </div>
 
-                          <tr id="row3">
-                            <td>
-                              <span class="custom-checkbox" id="checkboxIndex">
-                                <input type="checkbox" id="check3" class="checkitem" name="c3">
-                                <label for="check3"></label>
-                              </span>
-                            </td>
-                            <td>chien2</td>
-                            <td>Thai Binh</td>
-                            <td>30</td>
-                            <td>2010/07/14</td>
-                            <td>
-                              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                  class="fas fa-user-edit"></i></a>
-                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                  class="fas fa-user-minus"></i></a>
-                              <a data-toggle="modal" class="btn-eye"><i class="fas fa-eye"></i></a>
-                            </td>
-                          </tr>
-                        </tbody>
+                      <div class="alert alert-success" role="alert">
+                        First name: Chien
+                      </div>
 
-                      </table>
+                      <div class="alert alert-success" role="alert">
+                        Last name: Nguyen
+                      </div>
+
+                      <div class="alert alert-success" role="alert">
+                        Date of birth: 09/11/1999
+                      </div>
+
+                      <a href="#editEmployeeDetailModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                      
+                      <!-- endl -->
+                  </div>
+                </div>
+
+                <!-- Custom Font Size Utilities -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Contact employee info</h6>
+                  </div>
+                  <div class="card-body">
+                      <!-- Contents 2 -->
+                      <div class="alert alert-success" role="alert">
+                        Phone number: 0389341912
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        City: Thai Binh
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        Address: Kien Xuong-Thai Binh
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        Postal code: XXX-YYY-ZZZ
+                      </div>
+                      
+                      <a href="#editContactEmployeeModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                      <!-- endl content 2 -->
+                  </div>
+                </div>
+
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Salary info</h6>
+                  </div>
+                  <div class="card-body">
+                      <!-- Contents 3 -->
+                      <div class="alert alert-success" role="alert">
+                        Monthly salary: 1
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        Monney currency: 1000$
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        Monney deductions: 5$
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        Monney insurance: 995$
+                      </div>
+                      
+                      <a href="#editSalaryInfoModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                      <!-- endl content 3 -->
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Second Column -->
+              <div class="col-lg-4">
+
+                <!-- Background Gradient Utilities -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Work history</h6>
+                  </div>
+                  <div class="card-body">
+                    <!-- content 4 -->
+                    <div class="alert alert-success" role="alert">
+                      Company name: FPT
                     </div>
+                    <div class="alert alert-success" role="alert">
+                      Address: Ha Noi
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                      Phone number: 0123112121
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                      Office number: 0010101
+                    </div>
+
+                    <a href="#editWorkHistoryModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                  </div>
+                </div>
+
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Time info</h6>
+                  </div>
+                  <div class="card-body">
+                    <!-- content 5 -->
+                    <div class="alert alert-success" role="alert">
+                      Work hours: 10h
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                      Off day: 2day 
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                      Over time: 2h
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                      Extra day: 2day
+                    </div>
+
+                    <a href="#editTimeinfoModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Third Column -->
+              <div class="col-lg-4">
+
+                <!-- Grayscale Utilities -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Qualification</h6>
+                  </div>
+                  <div class="card-body">
+                    <!-- content 6 -->
+                    <div class="alert alert-success" role="alert">
+                      Master, No girl friend
+                    </div>
+                    
+                    <a href="#editQualificationModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                    <!-- endl -->
                   </div>
                 </div>
               </div>
 
             </div>
-
-            <div class="list-group">
-                <div class="row">
-  
-                  <!-- First Column -->
-                  <div class="col-lg-6">
-
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Employee detail</h6>
-                          </a>
-                          <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample1">
-                            <div class="card-body">
-                                <div class="alert alert-success" role="alert">
-                                    ID employee: 17020608
-                                  </div>
-            
-                                  <div class="alert alert-success" role="alert">
-                                    First name: Chien
-                                  </div>
-            
-                                  <div class="alert alert-success" role="alert">
-                                    Last name: Nguyen
-                                  </div>
-            
-                                  <div class="alert alert-success" role="alert">
-                                    Date of birth: 09/11/1999
-                                  </div>
-            
-                                  <a href="#editEmployeeDetailModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
-                            </div>
-                          </div>
-                      </div>
-
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample1-2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Contact employee infomation</h6>
-                          </a>
-                          <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample1-2">
-                            <div class="card-body">
-                                <!-- add contents -->
-
-                            </div>
-                          </div>
-                      </div>
-
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample1-3" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Salary infomation</h6>
-                          </a>
-                          <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample1-3">
-                            <div class="card-body">
-                                <!-- add contents -->
-
-                            </div>
-                          </div>
-                      </div>
-
-                  </div>
-    
-                  <!-- Second Column -->
-                  <div class="col-lg-6">
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample2-1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Work history</h6>
-                          </a>
-                          <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample2-1">
-                            <div class="card-body">
-                              <!-- add contents -->
-                            </div>
-                          </div>
-                      </div>
-
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample2-2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Qualification</h6>
-                          </a>
-                          <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample2-2">
-                            <div class="card-body">
-                              <!-- add contents -->
-                            </div>
-                          </div>
-                      </div>
-
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample2-3" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary">Time information</h6>
-                          </a>
-                          <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample2-3">
-                            <div class="card-body">
-                              <!-- add contents -->
-                            </div>
-                          </div>
-                      </div>
-                  </div>
-    
-                </div>
-            </div>
-  
-            <div class="list-group">
-              <div class="text-center">
-                <div class="error mx-auto" data-text="404">404</div>
-                <p class="lead text-gray-800 mb-5">Page Not Found</p>
-                <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-                <a href="index.html">&larr; Back to Dashboard</a>
-              </div>
-            </div>
-          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -627,8 +537,7 @@
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -646,103 +555,8 @@
     </div>
   </div>
 
-  <!-- HTML add, edit, delete -->
-
-  <div id="addEmployeeModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header">
-            <h4 class="modal-title">Add Employee</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-              <label>ID</label>
-              <input type="text" class="form-control" id="name0" required>
-            </div>
-            <div class="form-group">
-              <label>Name</label>
-              <input type="email" class="form-control" id="email0" required>
-            </div>
-            <div class="form-group">
-              <label>Experience</label>
-              <textarea class="form-control" id="address0" required></textarea>
-            </div>
-            <div class="form-group">
-              <label>Phone</label>
-              <input type="text" class="form-control" id="phone0" required>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="button" class="btn btn-success" value="Add" onclick="dataReceive (true)" data-dismiss="modal"
-              aria-hidden="true">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- Edit Modal HTML -->
-  <div id="editEmployeeModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header">
-            <h4 class="modal-title">Edit Employee</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          </div>
-          <div class="modal-body">
-            <div class="form-group">
-              <label>ID</label>
-              <input type="text" class="form-control" id="name1" required>
-            </div>
-            <div class="form-group">
-              <label>Name</label>
-              <input type="email" class="form-control" id="email1" required>
-            </div>
-            <div class="form-group">
-              <label>Experience</label>
-              <textarea class="form-control" id="address1" required></textarea>
-            </div>
-            <div class="form-group">
-              <label>Phone</label>
-              <input type="text" class="form-control" id="phone1" required>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="button" class="btn btn-info" value="Save" onclick="editHandling()" data-dismiss="modal"
-              aria-hidden="true">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- Delete Modal HTML -->
-  <div id="deleteEmployeeModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form>
-          <div class="modal-header">
-            <h4 class="modal-title">Delete Employee</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          </div>
-          <div class="modal-body">
-            <p>Are you sure you want to delete these Records?</p>
-            <p class="text-warning"><small>This action cannot be undone.</small></p>
-          </div>
-          <div class="modal-footer">
-            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="button" class="btn btn-danger" value="Delete" onclick="deleteSingleHandling ()"
-              data-dismiss="modal" aria-hidden="true">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div id="editEmployeeDetailModal" class="modal fade">
+  <!-- Edit Employee Detail Modal HTML -->
+	<div id="editEmployeeDetailModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form>
@@ -943,25 +757,23 @@
 		</div>
   </div>
 
-  <!-- ----- END HTML ---------- -->
-
+  <!-- end -->
+  <!-- <script src="./effect.click.detail.js"></script> -->
   <!-- Bootstrap core JavaScript-->
-  <script src="./js.bootstrap.jquery/jquery.js"></script>
-  <script src="./js.bootstrap.jquery/bootstrap.bundle.js"></script>
+  <script src="./jquery.js"></script>
+
+  <script src="./effect.click.detail.js"></script>
+
+  <script src="./bootstrap.bundle.js"></script>
+
   <!-- Core plugin JavaScript-->
-  <script src="./js.bootstrap.jquery/jquery.easing.js"></script>
+  <script src="./jquery.easing.js"></script>
   <!-- Custom scripts for all pages-->
-  <script src="./js.bootstrap.jquery/sb-admin-2.js"></script>
-  <!-- Page level plugins -->
-  <script src="./js.bootstrap.jquery/jquery.dataTables.js"></script>
-  <script src="./js.bootstrap.jquery/dataTables.bootstrap4.js"></script>
-  <!-- Page level custom scripts -->
-  <script src="./js.bootstrap.jquery/datatables-demo.js"></script>
-  <!-- js.jquery.deverlop -->
-  <script src="./js.dev/jquery.checkboxall-1.0.js"></script>
-  <script src="./js.dev/deverlop.js"></script>
-  <script src="./js.dev/scripts.js"></script>
-  <script src="./js.dev/onclick.table.detail.js"></script>
+  <script src="./sb-admin-2.js"></script>
+
+
+  <!-- <script src="./effect.click.detail.js"></script> -->
+
 </body>
 
 </html>

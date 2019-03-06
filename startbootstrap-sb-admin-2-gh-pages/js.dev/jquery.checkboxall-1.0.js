@@ -10,3 +10,4 @@ $(".checkitem").change(function(){
 		$("#selectAll").prop("checked", true)
 	}
 }); 
+
