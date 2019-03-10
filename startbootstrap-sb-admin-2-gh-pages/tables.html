@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
@@ -12,7 +12,6 @@
   <title>SB Admin 2 - Tables</title>
 
   <link href="./css/all.css" rel="stylesheet" type="text/css">
-
   <!-- Custom fonts for this template -->
   <link href="./css.dev/css-fonts-download.css" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -21,6 +20,7 @@
   <link href="./css.dev/dataTables.bootstrap4.css" rel="stylesheet">
   <link href="./css.dev/graphic.css" rel="stylesheet">
   <link href="./css.dev/develop.css" rel="stylesheet">
+  <!-- <link href="./css.dev/css-page-detail.css" rel="stylesheet"> -->
 </head>
 
 <body id="page-top">
@@ -398,7 +398,7 @@
                             <th style="width: 121px;">Action</th>
                           </tr>
                         </thead>
-                        <tfoot id="last-table">
+                        <tfoot>
                           <tr>
                             <th>
                             </th>
@@ -410,67 +410,8 @@
                           </tr>
                         </tfoot>
                         <tbody id="contenst-table">
-                          <tr id="row1">
-                            <td>
-                              <span class="custom-checkbox" id="checkboxIndex">
-                                <input type="checkbox" id="check1" class="checkitem" name="c1">
-                                <label for="check1" id="abc"></label>
-                              </span>
-                            </td>
-                            <td>chien</td>
-                            <td>Thai Binh</td>
-                            <td>30</td>
-                            <td>2010/07/14</td>
-                            <td>
-                              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                  class="fas fa-user-edit"></i></a>
-                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                  class="fas fa-user-minus"></i></a>
-                              <a data-toggle="modal" class="btn-eye"><i class="fas fa-eye"></i></a>
-                            </td>
-                          </tr>
-
-                          <tr id="row2">
-                            <td>
-                              <span class="custom-checkbox" id="checkboxIndex">
-                                <input type="checkbox" id="check2" class="checkitem" name="c2">
-                                <label for="check2"></label>
-                              </span>
-                            </td>
-                            <td>chien1</td>
-                            <td>Thai Binh</td>
-                            <td>30</td>
-                            <td>2010/07/14</td>
-                            <td>
-                              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                  class="fas fa-user-edit"></i></a>
-                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                  class="fas fa-user-minus"></i></a>
-                              <a data-toggle="modal" class="btn-eye"><i class="fas fa-eye"></i></a>
-                            </td>
-                          </tr>
-
-                          <tr id="row3">
-                            <td>
-                              <span class="custom-checkbox" id="checkboxIndex">
-                                <input type="checkbox" id="check3" class="checkitem" name="c3">
-                                <label for="check3"></label>
-                              </span>
-                            </td>
-                            <td>chien2</td>
-                            <td>Thai Binh</td>
-                            <td>30</td>
-                            <td>2010/07/14</td>
-                            <td>
-                              <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
-                                  class="fas fa-user-edit"></i></a>
-                              <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
-                                  class="fas fa-user-minus"></i></a>
-                              <a data-toggle="modal" class="btn-eye"><i class="fas fa-eye"></i></a>
-                            </td>
-                          </tr>
+                      
                         </tbody>
-
                       </table>
                     </div>
                   </div>
@@ -493,51 +434,91 @@
                           <!-- Card Content - Collapse -->
                           <div class="collapse show" id="collapseCardExample1">
                             <div class="card-body">
-                                <div class="alert alert-success" role="alert">
-                                    ID employee: 17020608
+                                  <div id="detail-gr2">
+                                      <div class="alert alert-success" role="alert">
+                                        ID employee: 17020608
+                                      </div>
+                
+                                      <div class="alert alert-success" role="alert">
+                                        First name: Chien
+                                      </div>
+                
+                                      <div class="alert alert-success" role="alert">
+                                        Last name: Nguyen
+                                      </div>
+                
+                                      <div class="alert alert-success" role="alert">
+                                        Date of birth: 09/11/1999
+                                      </div>
                                   </div>
-            
-                                  <div class="alert alert-success" role="alert">
-                                    First name: Chien
-                                  </div>
-            
-                                  <div class="alert alert-success" role="alert">
-                                    Last name: Nguyen
-                                  </div>
-            
-                                  <div class="alert alert-success" role="alert">
-                                    Date of birth: 09/11/1999
-                                  </div>
-            
-                                  <a href="#editEmployeeDetailModal" class="edit" data-toggle="modal"><button type="button" class="btn btn-outline-warning">Edit</button></a>
+                                  <a href="#editEmployeeDetailModal" class="edit" data-toggle="modal">
+                                    <button type="button" class="btn btn-outline-warning">Edit</button>
+                                  </a>
                             </div>
                           </div>
                       </div>
 
                       <div class="card shadow mb-4">
                           <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample1-2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                          <a href="#collapseCardExample1-2" id="contact-id" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                             <h6 class="m-0 font-weight-bold text-primary">Contact employee infomation</h6>
                           </a>
                           <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample1-2">
+                          <div class="collapse" id="collapseCardExample1-2">
                             <div class="card-body">
                                 <!-- add contents -->
+                                <div class="table-responsive">
+                                  <table class="table">
+                                    
+                                    <caption>List contact</caption>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Phone number</th>
+                                        <th scope="col">City</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Postal code</th>
+                                        <th scope="col">Act</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id = "table-contact">
+                
+                                    </tbody>
 
+                                  </table>
+                                </div>
                             </div>
                           </div>
                       </div>
 
                       <div class="card shadow mb-4">
                           <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample1-3" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                          <a href="#collapseCardExample1-3" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                             <h6 class="m-0 font-weight-bold text-primary">Salary infomation</h6>
                           </a>
                           <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample1-3">
+                          <div class="collapse" id="collapseCardExample1-3">
                             <div class="card-body">
                                 <!-- add contents -->
+                                <div class="table-responsive">
+                                  <table class="table">
+                                    <caption>List salary of employee</caption>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Monthly salary</th>
+                                        <th scope="col">Money currency</th>
+                                        <th scope="col">Money deductions</th>
+                                        <th scope="col">Money insurance</th>
+                                        <th scope="col">Act</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id = "table-salary">
+                          
+                                    </tbody>
 
+                                  </table>
+                                </div>
                             </div>
                           </div>
                       </div>
@@ -548,39 +529,93 @@
                   <div class="col-lg-6">
                       <div class="card shadow mb-4">
                           <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample2-1" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                          <a href="#collapseCardExample2-1" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                             <h6 class="m-0 font-weight-bold text-primary">Work history</h6>
                           </a>
                           <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample2-1">
+                          <div class="collapse" id="collapseCardExample2-1">
                             <div class="card-body">
-                              <!-- add contents -->
+                                <!-- add contents -->
+                                <div class="table-responsive">
+                                  <table class="table">
+                                    <caption>List work history of employee</caption>
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Company name</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Phone number</th>
+                                        <th scope="col">Office number</th>
+                                        <th scope="col">Act</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="table-work">
+                                      
+                                    </tbody>
+
+                                  </table>
+                                </div>
                             </div>
                           </div>
                       </div>
 
                       <div class="card shadow mb-4">
                           <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample2-2" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                          <a href="#collapseCardExample2-2" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                             <h6 class="m-0 font-weight-bold text-primary">Qualification</h6>
                           </a>
                           <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample2-2">
+                          <div class="collapse" id="collapseCardExample2-2">
                             <div class="card-body">
                               <!-- add contents -->
+                              <div class="table-responsive">
+                                <table class="table">
+                                  <caption>List qualification of employee</caption>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Exprience</th>
+                                      <th scope="col">Act</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="table-qualification">
+                                    
+                                  </tbody>
+
+                                </table>
+                              </div>
                             </div>
                           </div>
                       </div>
 
                       <div class="card shadow mb-4">
                           <!-- Card Header - Accordion -->
-                          <a href="#collapseCardExample2-3" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                          <a href="#collapseCardExample2-3" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                             <h6 class="m-0 font-weight-bold text-primary">Time information</h6>
                           </a>
                           <!-- Card Content - Collapse -->
-                          <div class="collapse show" id="collapseCardExample2-3">
+                          <div class="collapse" id="collapseCardExample2-3">
                             <div class="card-body">
                               <!-- add contents -->
+                              <div class="table-responsive">
+                                <table class="table">
+                                  <caption>List time of employee</caption>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Work hours</th>
+                                      <th scope="col">Off day</th>
+                                      <th scope="col">Over time</th>
+                                      <th scope="col">Extra day</th>
+                                      <th scope="col">Act</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="table-time">
+                                    
+                                  </tbody>
+
+                                </table>
+                              </div>
                             </div>
                           </div>
                       </div>
@@ -594,7 +629,7 @@
                 <div class="error mx-auto" data-text="404">404</div>
                 <p class="lead text-gray-800 mb-5">Page Not Found</p>
                 <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-                <a href="index.html">&larr; Back to Dashboard</a>
+                <a href="tables.html">&larr; Back to Dashboard</a>
               </div>
             </div>
           </div>
@@ -609,7 +644,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Nguyen Duy Chien</span>
           </div>
         </div>
       </footer>
@@ -659,25 +694,24 @@
           <div class="modal-body">
             <div class="form-group">
               <label>ID</label>
-              <input type="text" class="form-control" id="name0" required>
+              <input type="text" class="form-control" id="add-id-maintb" required>
             </div>
             <div class="form-group">
-              <label>Name</label>
-              <input type="email" class="form-control" id="email0" required>
+              <label>First name</label>
+              <input type="text" class="form-control" id="add-fname-maintb" required>
             </div>
             <div class="form-group">
-              <label>Experience</label>
-              <textarea class="form-control" id="address0" required></textarea>
+              <label>Last name</label>
+              <input type="text" class="form-control" id="add-lname-maintb" required>
             </div>
             <div class="form-group">
-              <label>Phone</label>
-              <input type="text" class="form-control" id="phone0" required>
+              <label>Date of birth (mm/dd/yyyy)</label>
+              <input type="date" class="form-control" id="add-birthday-maintb" required>
             </div>
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-            <input type="button" class="btn btn-success" value="Add" onclick="dataReceive (true)" data-dismiss="modal"
-              aria-hidden="true">
+            <input type="button" class="btn btn-success" id="addsuccess-maintb" value="Add" data-dismiss="modal" aria-hidden="true">
           </div>
         </form>
       </div>
@@ -948,6 +982,9 @@
   <!-- Bootstrap core JavaScript-->
   <script src="./js.bootstrap.jquery/jquery.js"></script>
   <script src="./js.bootstrap.jquery/bootstrap.bundle.js"></script>
+  <!-- file load data  -->
+  <script src="./js.dev/data/employees.js"></script>
+  <script src="./js.dev/data/loaddata.js"></script>
   <!-- Core plugin JavaScript-->
   <script src="./js.bootstrap.jquery/jquery.easing.js"></script>
   <!-- Custom scripts for all pages-->
@@ -957,11 +994,16 @@
   <script src="./js.bootstrap.jquery/dataTables.bootstrap4.js"></script>
   <!-- Page level custom scripts -->
   <script src="./js.bootstrap.jquery/datatables-demo.js"></script>
-  <!-- js.jquery.deverlop -->
+   <!-- js.jquery.deverlop -->
   <script src="./js.dev/jquery.checkboxall-1.0.js"></script>
   <script src="./js.dev/deverlop.js"></script>
   <script src="./js.dev/scripts.js"></script>
+  <!-- load data click table detail -->
+  <script src="./js.dev/data/loaddata.detail.js"></script>
   <script src="./js.dev/onclick.table.detail.js"></script>
+  <!-- method add edit delete -->
+  <script src="./js.dev/data/add.edit.delete/add.main.table.js"></script>
+
 </body>
 
 </html>

@@ -1,16 +1,4 @@
 $(document).ready(function () {
-   
-    $(".btn-eye").click(function (e) { 
-        e.preventDefault();
-        var id = $(this).parent().parent().attr('id');
-        $(".pagination li").removeClass('active');
-        $("#page .list-group").hide();
-        $("#page .list-group:eq(" + 1 + ")").show();
-        $("#btn-0").css("background-color", "#858796");
-        $("#btn-1").css("background-color", "red");
-        $("#btn-2").css("background-color", "#858796");
-        // To do code get data. 
-    });   
     $(".edit").click(function (e) { 
         e.preventDefault();
         var id = $(this).parent().parent().attr('id');
